@@ -1,4 +1,4 @@
-# atest assignment
+# Test assignment app for Bookmyvet
 This is the result of test assignment for the front-end developer position at Bookmyvet.
 Candidature:
 - Thi Nha Uyen Tran (Tina)
