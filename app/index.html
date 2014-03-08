@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <title>BookMyVet Test Assignment - Tina Tran</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/app.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>		
+        
+        <!-- fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" >
+ 
+        <!-- JS -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/filters.js"></script>
+        <script src="js/directives.js"></script>       
+        
+        <script src="js/jquery.smint.js"></script>
+        
+        
+        <!-- Map -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIXzmaQJ98Q4nAe7WeaLjD1OWp8aeqBn4&sensor=false"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+ 
+    </head>
+        
+    <body>
+        
+        <div class="wrapper">
+	       <div class="nav-menu" >
+                <a href="#" id="s-header" data-hover="Home">Home</a> 
+                <a href="#" id="s-description" data-hover="Description">Description</a>
+                <a href="#/map-view" id="s-map" data-hover="Map">Map</a>
+                <a href="#" id="s-movies" data-hover="Movies">Movies</a>
+            </div>
+
+
+	       <div class="section s-header">
+                <h1>Everything is theoretically impossible, until it is done.</h1>
+                <h3>Robert A. Heinlein</h3>
+	       </div>
+
+            <div class="section s-description">
+                <p class="description">
+                    As a result of the test assignment, this angular app is going to complete my candidature for the Front-end developer position at Bookmyvet.<br>
+                    In the map section, you can type a name of any place (address or cafe or whatever google maps can
+find) in the text field, this app will provide you 5 hints. Results are bounded within the border of Germany. When you choose any item from the hints provided, the google map will move to the location of that place and mark it with a marker.
+                    <br>
+                    This app uses:
+                </p> 
+                <ul class="description techno-list">
+                        <li>Node.js</li>
+                        <li>Angular</li>
+                        <li>Jquery</li>
+                        <li>Bootstrap</li>
+                        <li>Smint Jquery plugin </li>
+                        <li>Google Maps Javascript API</li>
+                        <li>Font Awesome</li>
+                </ul>
+                <p class="description techno-list">
+                    Please find my <i class="fa fa-linkedin"></i> profile <a href="http://www.linkedin.com/pub/thi-nhauyen-
+tina-tran/55/20/a03" target="_blank">here</a>.
+                </p>
+            </div>
+
+            <div class="section s-map" ng-view>           
+            </div>
+
+            <div class="section s-movies">
+            </div>
+        
+        </div>
+        
+    </body>
+</html>
