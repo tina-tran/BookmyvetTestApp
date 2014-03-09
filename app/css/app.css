@@ -142,7 +142,11 @@ body { height: 100%; margin: 0; padding: 0 }
     width: 100%;
 }
 
+/* Hack for zoom controls display bug */
+#map-canvas img { max-width: none; }
+
 #search-term {
     width: 50%;
     margin: 10px;
 }
+

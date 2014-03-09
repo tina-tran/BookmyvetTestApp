@@ -16,7 +16,8 @@ angular.module('myApp.controllers', []).controller('MyCtrl1', [function() {
     function initialize() {
         var mapOptions = {
             center: new google.maps.LatLng(51.2, 10.4),
-            zoom: 6
+            zoom: 6,
+            streetViewControl: false
         };
 
         map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
