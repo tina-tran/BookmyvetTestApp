@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).controller('MyCtrl1', [function() {
+angular.module('myApp.controllers', ['myApp.services']).controller('MapsController', function() {
 
     $(document).ready( function() {
         $('.nav-menu').smint({
@@ -53,6 +53,9 @@ angular.module('myApp.controllers', []).controller('MyCtrl1', [function() {
         } 
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);
-                        
+    google.maps.event.addDomListener(window, 'load', initialize);                     
+}).
+controller('MoviesController', ['themoviedbService', function(themoviedbService) {
+    // get discover movies by different types of data like average rating, number of votes, genres and certifications.
+    this.films = themoviedbService.query();
 }]);

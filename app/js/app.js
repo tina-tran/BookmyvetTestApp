@@ -10,7 +10,6 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/map-view', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
+  $routeProvider.when('/map-view', {templateUrl: 'partials/partial1.html', controller: 'MapsController'});
   $routeProvider.otherwise({redirectTo: '/map-view'});
 }]);

@@ -135,7 +135,10 @@ body { height: 100%; margin: 0; padding: 0 }
 .s-movies {
 	min-height: 500px;
 	background: #fce57f;
+    padding-top: 2%;
+    text-align: center;
 }
+
 
 #map-canvas {
     height: 100%;
@@ -149,4 +152,5 @@ body { height: 100%; margin: 0; padding: 0 }
     width: 50%;
     margin: 10px;
 }
+
 
